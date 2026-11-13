@@ -14,51 +14,67 @@ A comprehensive portfolio showcasing projects, exercises, data analysis, and int
 ```text
 samsung-innovation-campus-portfolio/
 │
-├── python-core/                  # Core Python modules & data visualization
-│   ├── arithmetic.py             # Arithmetic operations & modular functions
-│   ├── main.py - main5.py        # Python programming exercises
-│   ├── mat1.py - mat8.py         # Matplotlib charts & visualizations
-│   ├── create_excel.py           # Automated Excel creation using openpyxl
-│   ├── qs-world-rankings-2025.csv# Dataset: Global university rankings
-│   ├── titanic.csv               # Dataset: Titanic passenger data
-│   ├── students.xlsx             # Generated sample spreadsheet
+├── python-core/                                    # Core Python modules & data visualization
+│   ├── arithmetic.py                               # Arithmetic operations & modular functions
+│   ├── main.py - main5.py                          # Python programming exercises
+│   ├── mat1.py - mat8.py                           # Matplotlib charts & visualizations
+│   ├── create_excel.py                             # Automated Excel creation using openpyxl
+│   ├── qs-world-rankings-2025.csv                  # Dataset: Global university rankings
+│   ├── titanic.csv                                 # Dataset: Titanic passenger data
+│   ├── students.xlsx                               # Generated sample spreadsheet
 │   └── ...
 │
-├── jupyter-notebooks/            # Interactive data analysis & lab experiments
-│   └── sic.ipynb                 # Comprehensive SIC data exploration notebook
+├── jupyter-notebooks/                              # Jupyter Notebooks & Data Science Labs
+│   ├── samsung_innovation_campus_dsa.ipynb        # Master SIC DSA & Python notebook
+│   ├── python_lab_exercises.ipynb                  # Lab assignments: Calculator, Fibonacci, Lists, Sorting, File I/O
+│   ├── student_performance_and_stock_eda.ipynb     # Comprehensive EDA on Student Performance & financial stock time-series
+│   ├── data_structures_mastery.ipynb              # Deep-dive into Lists, Tuples, Dictionaries, Sets, 2D Matrices
+│   ├── loops_patterns_and_number_algorithms.ipynb  # For/while loops, factorials, primes, Armstrong numbers
+│   ├── conditionals_and_decision_making.ipynb      # Leap year, grades, boolean logic, conditionals
+│   ├── groq_kannada_chatbot.ipynb                  # Groq LLM API + Gradio Chatbot with Kannada system prompt
+│   ├── groq_llm_quickstart.ipynb                   # Groq API quickstart integration
+│   ├── histogram_visualization.ipynb               # Histogram charting with Matplotlib
+│   ├── file_word_counter.ipynb                     # File inspection & text processing
+│   ├── string_typecasting_operations.ipynb         # String conversions & arithmetic
+│   ├── triangle_area_math.ipynb                    # Equilateral triangle math calculations
+│   ├── student-mat.csv                             # Accompanying dataset: Student performance metrics
+│   └── book.json                                   # Accompanying dataset: JSON book records
 │
-├── streamlit-dashboards/         # Interactive web applications & dashboards
-│   ├── app.py                    # Multi-feature Streamlit web application
-│   ├── universe_app.py           # Interactive data explorer application
-│   ├── sic2.py - sic5.py         # Streamlit UI & widget exercises
-│   ├── SIC_CnP_Ch08_Unit39.py   # Chapter 8 Streamlit lab implementation
-│   ├── covid-vaccination-doses-per-capita.csv # Vaccination metrics dataset
-│   ├── cosmos-desktop.png        # UI assets
+├── streamlit-dashboards/                           # Interactive web applications & dashboards
+│   ├── app.py                                      # Multi-feature Streamlit web application
+│   ├── universe_app.py                             # Interactive data explorer application
+│   ├── sic2.py - sic5.py                           # Streamlit UI & widget exercises
+│   ├── SIC_CnP_Ch08_Unit39.py                     # Chapter 8 Streamlit lab implementation
+│   ├── covid-vaccination-doses-per-capita.csv      # Vaccination metrics dataset
+│   ├── cosmos-desktop.png                          # UI assets
 │   ├── cosmos-mobile.png
 │   └── ...
 │
-├── .gitignore                    # Clean Python, Jupyter, & Streamlit ignore rules
-└── README.md                     # Project documentation
+├── misc/                                           # Additional code snippets
+│   └── hello_world.c                               # C language introductory program
+│
+├── .gitignore                                      # Clean Python, Jupyter, & Streamlit ignore rules
+└── README.md                                       # Project documentation
 ```
 
 ---
 
-## 🚀 Key Modules & Highlights
+## 📓 Jupyter Notebooks Breakdown
 
-### 1. 🐍 Core Python & Data Visualization (`/python-core`)
-- **Foundations**: Modular Python architecture, functional programming, dynamic input parsing, and control structures.
-- **Excel Automation**: Generating and formatting `.xlsx` workbooks programmatically with `openpyxl`.
-- **Data Visualization**: Advanced charts using `matplotlib` and `pandas`:
-  - Demographic breakdowns and survival distributions on the **Titanic dataset**.
-  - Comparative institutional ranking plots on the **QS World Rankings (2025)**.
-
-### 2. 📓 Jupyter Notebooks (`/jupyter-notebooks`)
-- **Interactive Labs**: End-to-end data manipulation workflows, step-by-step algorithms, visual plots, and inline exploratory data analysis (EDA).
-- **Notebook**: `sic.ipynb` consolidates coding exercises and statistical analysis into documented, reproducible cells.
-
-### 3. 📊 Streamlit Dashboards (`/streamlit-dashboards`)
-- **Interactive Web Apps**: Rapid web application development with real-time UI components, filters, and dynamic charting.
-- **Data Dashboards**: Visualizing COVID-19 vaccination per capita metrics, custom analytics views, and responsive layout styling.
+| Notebook | Program / Topic Description | Accompanying Dataset |
+| :--- | :--- | :--- |
+| **`samsung_innovation_campus_dsa.ipynb`** | Data Structures & Algorithms: Ciphers, Stack, Queue, Josephus sequence, Sorting (Bubble, Merge, Quick), Recursion (Tower of Hanoi, Tromino puzzle), Greedy & DP | — |
+| **`python_lab_exercises.ipynb`** | Multi-problem lab set: Menu-driven Calculator, Age from DOB, Fibonacci series, Digit occurrences, File word counter, Marks descending bubble sort | — |
+| **`student_performance_and_stock_eda.ipynb`** | Exploratory Data Analysis (EDA) on student demographics, absences, study time, boxplots, missing value imputation, and Yahoo Finance (`yfinance`) rolling averages | `student-mat.csv` |
+| **`data_structures_mastery.ipynb`** | Comprehensive manipulation of Lists, Tuples, Dictionaries, Sets, Nested 2D Lists, deep copy vs shallow copy, and JSON loading | `book.json` |
+| **`loops_patterns_and_number_algorithms.ipynb`** | Loop constructs, number summation, factorials, prime number filters, Armstrong number checks, and star/hash patterns | — |
+| **`conditionals_and_decision_making.ipynb`** | Leap year evaluation, multi-condition grading system, discount rules, and logical operators | — |
+| **`groq_kannada_chatbot.ipynb`** | AI Chatbot built using Groq API (`openai/gpt-oss-120b`) with Kannada persona and Gradio UI | — |
+| **`groq_llm_quickstart.ipynb`** | Quickstart script for setting up Groq completions and Gradio interface | — |
+| **`histogram_visualization.ipynb`** | Histogram generation and frequency distribution visualization with `matplotlib` | — |
+| **`file_word_counter.ipynb`** | Text file inspection, line parsing, and word counting | — |
+| **`string_typecasting_operations.ipynb`** | String typecasting, slicing, concatenation, and basic mathematical operations | — |
+| **`triangle_area_math.ipynb`** | Geometric computation of equilateral triangle area using the `math` library | — |
 
 ---
 
@@ -81,7 +97,7 @@ source .venv/bin/activate
 
 ### 3. Install Dependencies
 ```bash
-pip install pandas matplotlib openpyxl streamlit jupyter
+pip install pandas matplotlib openpyxl streamlit jupyter seaborn yfinance gradio groq
 ```
 
 ---
@@ -99,7 +115,7 @@ python create_excel.py
 ### Launching Jupyter Notebooks
 ```bash
 cd jupyter-notebooks
-jupyter notebook sic.ipynb
+jupyter notebook
 ```
 
 ### Launching Streamlit Dashboards
