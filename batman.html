@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Best Frontend Design</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva,
+        Verdana, sans-serif;
+      }
+
+      .batman-container {
+        text-align: center;
+        border: 2px solid #333;
+        padding: 20px;
+        border-radius: 10px;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+
+      .batman-logo {
+        margin: 20px;
+        display: inline-block;
+        background-image: url(C:\Users\LENOVO\Downloads\j_portfolio2.o\batman.jpg); /*
+        Replace with your Batman logo image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        animation: logo-rotate 10s linear infinite;
+      }
+
+      @keyframes logo-rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .batman-info {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="batman-container">
+      <div class="batman-logo"></div>
+      <div class="batman-info">
+        Welcome to Batman's World
+      </div>
+    </div>
+
+    <script>
+
+      document.querySelector('button').addEventListene
+      r('click', () => {
+        alert("You've clicked on Batman's World! 🦇");
+      });
+    </script>
+
+  </body>
+  </html>
+
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Simple HTML Page</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 20px;
+              background-color: #f4f4f4;
+              color: #333;
+          }
+          h1 {
+              color: #5d5d5d;
+          }
+          p {
+              line-height: 1.6;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Welcome to My Simple HTML Page</h1>
+      <p>This is a paragraph in the body of the HTML document. You can add text here to fill your page with content.</p>
+  </body>
+  </html>

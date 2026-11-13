@@ -1,0 +1,14 @@
+names=['ramesh','suresh','devi']
+n=['bheema','loky']
+print(names)
+print(n)
+print(n+names)
+print(names[1])
+names.append('rama')
+print(names)
+names.remove(names[2])
+print(names)
+names.remove("rama")
+print(names)
+print(names+n)
+print(names[-1])
