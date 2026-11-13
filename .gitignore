@@ -32,6 +32,15 @@ env/
 env.bak/
 venv.bak/
 
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+*-checkpoint.py
+
+# Streamlit & Playwright local caches
+.streamlit/
+.playwright-mcp/
+
 # Environment variables & secrets
 .env
 .env.*
